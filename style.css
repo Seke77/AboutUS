@@ -87,15 +87,34 @@ header .container {
 }
 
 .site-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 2em;
-    font-weight: 700;
+/*     font-family: 'Playfair Display', serif; */
+/*     font-size: 2em; */
+/*     font-weight: 700; */
+    display: flex; /* Use flexbox to easily center the image if needed */
+    align-items: center; /* Vertically align the image */
     color: var(--primary-blue);
     text-decoration: none;
     transition: color var(--transition-fast);
+    transition: opacity var(--transition-fast); /* New hover transition for opacity */
+
 }
 .site-logo:hover {
+    opacity: 0.8; /* Subtle fade on hover for the logo */
     color: var(--white);
+}
+
+.header-logo {
+    height: 50px; /* Set a fixed height for your logo */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it behaves like a block element */
+    /* Add any other styling like margin if needed to separate from nav */
+}
+
+/* If the logo itself has distinct hover states, you might add: */
+.header-logo:hover {
+    /* For example, if you want it to lift slightly */
+    transform: scale(1.05);
+    transition: transform var(--transition-fast);
 }
 
 header nav ul {
