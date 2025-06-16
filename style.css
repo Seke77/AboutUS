@@ -557,10 +557,29 @@ footer {
     .project-info, .project-image-container {
         padding: 25px;
     }
-    .contact-info p {
+/*     .contact-info p {
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
+    }
+    .contact-info p i {
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+} */
+
+    .contact-content {
+        text-align: center; /* Keep the section title and intro text centered */
+    }
+
+    .contact-info {
+        align-items: center; /* Keep the entire block of contact info centered */
+    }
+
+    .contact-info p {
+        flex-direction: column; /* Stack icon and text vertically */
+        align-items: center; /* Center the icon and text horizontally within each contact line */
+        text-align: center; /* Center the text itself within its container */
     }
     .contact-info p i {
         margin-bottom: 5px;
